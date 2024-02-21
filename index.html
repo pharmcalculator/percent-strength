@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        .result-box {
+            background-color: lightblue;
+            padding: 20px;
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .input-label {
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .input-field {
+            font-size: 24px;
+        }
+        .calculate-button {
+            font-size: 24px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>Percent strength weight in volume (w/v) Calculator</h1>
+    <form id="calculator-form">
+        <label for="weight-input" class="input-label">Weight of Solute (in grams):</label>
+        <input type="text" id="weight-input" class="input-field" required><br><br>
+
+        <label for="volume-input" class="input-label">Volume of Solvent (in mL):</label>
+        <input type="text" id="volume-input" class="input-field" required><br><br>
+
+        <button type="submit" class="calculate-button">Calculate</button>
+    </form>
+    <div id="result-container"></div>
+
+    <script src="index.js"></script>
+</body>
+</html>
